@@ -9,7 +9,7 @@ In other words, prime numbers can't be divided by other numbers than itself or 1
 public class CheckPrimeOrNot {
     public static void main(String[] args) {
         int number = -2;
-        System.out.println("Is %d prime? ".formatted(number) + isPrime(number));
+        System.out.println("Is %d prime number ?, ".formatted(number) + isPrime(number));
 
     }
 
