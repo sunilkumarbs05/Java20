@@ -15,12 +15,13 @@ public class SortMapValueUsingJava8 {
         map.put("Java2Novice", 2);
         map.put("Unix", 67);
         map.put("MAC", 26);
-        Map<String, Integer> sortedMap = new LinkedHashMap<>();
+        System.out.println("Before sort: " + map);
+        System.out.println("After sort: ");
         map.entrySet().stream()
                 .sorted((e1, e2) -> e1.getValue().compareTo(e2.getValue()))
-                .forEach(element -> sortedMap.put(element.getKey(), element.getValue()));
+                .forEach(System.out::println);
 
-        System.out.println("Before sort: " + map);
-        System.out.println("After sort: " + sortedMap);
+
+
     }
 }
