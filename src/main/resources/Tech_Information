@@ -1,0 +1,20 @@
+Tech Information
+
+
+https://www.evoketechnologies.com/blog/code-review-checklist-perform-effective-code-reviews/
+
+Code review
+1. Am I able to understand the code easily?
+2. Is the code written following the coding standards/guidelines?
+3. Is the same code duplicated more than twice?
+4. Can I unit test / debug the code easily to find the root cause?
+5. Is this function or class too big? If yes, is the function or class having too many responsibilities
+
+1. Code formatting
+2. Architecture
+3. Coding best practices
+4. Non Functional requirements
+5. Object-Oriented Analysis and Design (OOAD) Principles
+
+
+

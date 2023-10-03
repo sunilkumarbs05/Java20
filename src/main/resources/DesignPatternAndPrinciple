@@ -1,0 +1,185 @@
+Design Pattern and Principal
+
+SOLID
+	S	—>	Single responsibility Principle
+	0 	—>	Open / Closed Principle
+	L	—>	Liskov Substitution Principle
+	I	—>	Interface Segregation Principle
+	D	—>	 Dependency inversion Principle
+
+
+- Single responsibility Principle —> A class should have only one reason to change
+- Open / Closed Principle —> Software entities should be open for extension but closed for modification
+- Liskov Substitution Principle —> The derived classes must be completely substitutable for their base classes
+- Interface Segregation Principle —> Many clients specific interface are better than one general purpose interface.
+- Dependency inversion Principle —> We must use abstraction instead for concrete implementations. High level modules should not depend on the low level module.
+
+What is design pattern?
+	A design pattern   provides a general reusable solution for the common problems that occur in software design. The pattern typically shows relationships and interactions between classes or objects.
+
+Design Pattern
+
+	1. Creational Design Pattern
+            1. Factory Pattern
+            2. Abstract Factory Pattern
+            3. Singleton Pattern
+            4. Prototype Pattern
+            5. Builder Pattern.
+
+	2. Structural Design Pattern
+            1. Adapter Pattern
+            2. Bridge Pattern
+            3. Composite Pattern
+            4. Decorator Pattern
+            5. Facade Pattern
+            6. Proxy Pattern
+
+	3. Behavioral Design Pattern
+            1. Chain Of Responsibility Pattern
+            2. Command Pattern
+            3. Interpreter Pattern
+            4. Iterator Pattern
+            5. Observer Pattern
+            6. State Pattern
+            7. Template Pattern
+            8. Strategy Pattern
+            9. Visitor Pattern
+
+
+
+
+Factory Pattern
+	define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate
+
+Abstract Factory Pattern
+	define an interface or abstract class for creating families of related (or dependent) objects but without specifying their concrete sub-classes.
+
+Singleton design pattern
+	Singleton Pattern says that just"define a class that has only one and provides a global point of access to it".
+
+Prototype Design Pattern
+	cloning of an existing object instead of creating new one and can also be customized as per the requirement
+
+Builder Design Pattern
+	construct a complex object from simple objects using step-by-step approach
+
+
+Adapter pattern
+	Adapter pattern works as a bridge between two incompatible interfaces
+
+
+Bridge Pattern
+	A Bridge Pattern says that just   "decouple the functional abstraction from the implementation so that the two can vary independently”.
+
+Composite Pattern
+	Composite pattern is used where we need to treat a group of objects in similar way as a single object. Composite pattern composes objects in term of a tree structure to represent part as well as whole hierarchy.
+
+Decorator Pattern
+	Decorator pattern allows a user to add new functionality to an existing object without altering its structure.
+
+Facade Pattern
+
+Proxy Pattern
+	provides the control for accessing the original object
+
+Chain Of Responsibility Pattern
+
+	The chain of responsibility pattern creates a chain of receiver objects for a request
+
+	Example:
+        1. Interview process: Technical round —> Manager Round —> HR Round
+        2. Coffer prepare Machine : Add sugar —> Add milk —> Add Coffee
+
+	Advantage:
+        - Guarantee of a sequential execution one after another
+        - You can add/replace additional components in the sequence without impacting consuming application
+
+
+
+Command Pattern
+
+	A request is wrapped under an object as command and passed to invoker object. Invoker object looks for the appropriate object which can handle this command and passes the command to the corresponding object which executes the command.
+
+Example:
+    - Separate CRUD commands to operate on a table for insert, update, delete, select etc.
+    - Smart remote to control home appliances. Remote mode can be voice or text  but the commands will be same for both
+    - Virtual keyboard, where you can replace the behaviour of keys. You don’t need to change the entire logic, just replace the commands as per the need.
+
+Advantage
+    - Command execution logic gets decoupled from the client. Client awareness remains till command creation only. What it does internally is an abstraction
+    -  Single responsibility principle
+    - Open/Closed principle
+
+
+Interpreter Pattern
+
+	Interpreter pattern provides a way to evaluate language grammar or expression.
+
+Example:
+- Java compiler —> It interprets the java source code into byte code that is understandable by JVM
+- Google Translator —> It takes input can be in any language and we can get the output interpreted in another language.
+
+
+Iterator Pattern
+
+	Iterator Pattern is used   "to access the elements of an aggregate object sequentially without exposing its underlying implementation
+
+	The Iterator pattern is also known as   Cursor.
+
+Observer Pattern
+
+	An Observer Pattern says that "just define a one-to-one dependency so that when one object changes state, all its dependents are notified and updated automatically".
+
+Example:
+    - Youtube channel subscriber -> subscriber get notification when channel upload an video.
+    - What’s app group -> Team member get notification when group admin
+    - News agency ->
+    - Broadcast ->
+    - Publish-Subscribe
+
+Advantage
+ Async communication can be done
+
+State Pattern
+	A State Pattern says that "the class behavior changes based on its state".
+
+	Benefits:
+    * It keeps the state-specific behavior.
+
+
+Template Method Design Pattern
+
+	Template method design pattern is to define an algorithm as a skeleton of operations and leave the details to be implemented by the child classes
+Benefits:
+* It is very common technique for reusing the code.This is only the main benefit of it.
+
+Strategy pattern
+
+	Strategy pattern   is a behavioural design pattern that allows the behaviour of an object to be selected at runtime.   
+
+	Benefits:
+    - It defines each behaviour within its own class, eliminating the need for conditional statements
+    - It makes it easier to extend and incorporate new behaviour without changing the application.
+
+Visitor Pattern
+
+It is a type of   behavioural design pattern.    It is used when we have to perform an operation on a group of similar kind of Objects.    With the help of visitor pattern, we can move the operational logic from the objects to another class.   
+
+
+
+MVC Pattern
+MVC Pattern stands for Model-View-Controller Pattern. This pattern is used to separate application's concerns.
+
+IOC and DI
+- IOC(Inversion Of Controller):       Giving control to the container to get instance of object is called Inversion of Control., means instead of you are creating object using new operator, let the container do that for you.
+- DI(Dependency Injection):      Way of injecting properties to an object is called Dependency injection.
+
+	Example : Application development using springboot
+	Benefits: it provide loose coupling.
+		 		It removes the dependency from the program.
+
+
+
+
+
+

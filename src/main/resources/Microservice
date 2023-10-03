@@ -1,0 +1,181 @@
+Microservices
+
+What are Microservices
+    - Microservices are small, independent and loosely coupled.
+    - Each service is a separate codebase
+    - Services can be deployed independently
+    - Services are responsible for persisting their own data or external state
+    - Service communicate with each other by using well defined API’s
+    - Services don’t need to share the same technology stack, libraries or frameworks
+    - Better scalability
+
+Example Microservices
+
+	Modules/service
+        - Product management
+        - Order management
+        - Account management
+        - Payment management
+        - Login management
+
+	Database : Each module has separate database
+
+	Gateway :  communication have via gateway.
+
+Design Principles
+1. Independent / Autonomous
+2. Resilient / Fault tolerant
+3. Observable
+4. Discoverable
+5. Domain driven
+6. Decentralisation
+7. High Cohesion
+8. Single Source of Truth
+
+	Independent / Autonomous
+        - Small team size
+        - Parallel development
+        - Clear contracts
+        - Individually deployable
+
+	Resilient / Fault tolerant
+        - Avoid single point of failure
+        - Avoid cascading failure
+        - Consider failure as events
+
+	Observable
+        - Centralised monitoring
+        - Centralised logging
+        - Health check system
+
+	Discoverable
+        - All service should be registered at one place
+        - It makes clients life easy when looking for specific service
+
+	Domain Driven
+        - Focussed on business
+        - Focussed on core domain
+        - Focus on Domain logic
+
+	Decentralisation
+        - Database for each service
+        - Choice of database depends on the nature of particular service
+
+	High Cohesion
+        - Do one thing only
+        - SRP
+        - A business function
+        - A business domain
+        - Easy to take new similar feature
+    - Why
+        - Scalability
+        - Availability
+
+	Single source of truth
+        - There should be only one source to get the complete information
+        - This helps in avoiding the duplicity
+
+Microservice design pattern
+    1. Decomposition
+    2. Database
+    3. Communication among service
+    4. Integration
+    5. Deployment
+    6. Observibility
+    7. Cross cutting concern
+
+Decomposition Pattern
+	1. By business capabilities
+	2. By subdomain
+	3. Strangler pattern
+	4. Sidecar pattern / service mesh
+        - Reduces the code duplication
+        - Reduces the complexity in the main application
+        - Independent from primary application in terms of run time and the language in which they are implemented loose coupling
+	Service Mesh - it’s dedicated infrastructure layer for service to service communication . Tools:- istio, Consul
+
+Database
+	1. Database per service
+	2. Shared database
+	3. CQRS : Command query responsibility segregation
+	4. Saga pattern  —> it’s a way to manage data consistency across Microservices in distribution transaction scenarios.
+	5. Event sourcing
+
+Data consistency
+        - Eventual consistency
+        - Strong consistency
+
+Communication
+    1. Synchronous
+    2. Assynchronous
+    3. Communication medium
+        1. HTTP REST
+        2. Graphql
+        3. gRPC
+
+Integration
+1. API gateway : The API Gateway serves as a reverse proxy to accept API calls from the client application, forwarding this traffic to the appropriate service.
+2. Aggregator pattern  :  Collaborating data returned by each service
+    1. Chained Pattern
+    2. Branch Pattern
+3. Client side UI composition pattern: Micro frontend , reach | Angular
+
+API Gateway Tools:-  Apigee, Kong Gateway, Amazon API Gateway, Oracle API Gateway, Azure API Gateway, Express Gateway, Spring cloud gateway(Zuul)
+Feature: Security(Authentication and Authorization, Logging and Tracing , Load balancing, IP whitelisting, Request and response transformations , Caching
+
+
+Observability
+    1. Log aggregation : Tools -> Splunk, Sumo logic, ELK, Fluentd, GrayLog
+    2. Performance Metrics: Tools-> New relic, App Dynamic , Dynatrace, Datadog
+    3. Distributed tracing : Tools -> ZIPKIN, JAEGER, New relic, Grafana, Dynatrace
+    4. Health check -> Springboot Actuator
+
+Cross cutting concern patterns
+	1. External configuration: ->A config server in microservices is a centralized service that stores configuration 								information for all of the other microservices in the 	system.
+			Tools: Spring Cloud config, Consul, Zookeeper, etcd.
+	2. Service discovery
+		Tools : Consul, Etcd, Apache Zookeeper.
+      3. Circuit breaker:   It allows developers to prevent cascading failures in microservices architecture by invoking 						remote services through a proxy
+			States: Closed, Open, Half Open
+			Tools: Spring Cloud Circuit breaker, Istio, Hystrix
+
+
+Load balance:
+- Efficient distribution of requests among all the available instances.
+- Ensuring high availability
+
+	Method
+        - Round robin
+        - Response time
+        - Resource based
+        - Source Id hash
+
+Types of Load Balancers – Based on Functions
+1. Network Load Balancer / Layer 4 (L4) Load Balancer:   — Based on the network variables like IP address and destination ports.  — Network Load balancing is the distribution of traffic at the transport level through the routing decisions. Such load balancing is TCP i.e. level 4  
+2. Application Load Balancer / Layer 7 (L7) Load Balancer:  — Layer 7 load balancer distributes the requests based on multiple parameters at the application level.   — Application load balancers control the server traffic based on the individual usage and behavior. 
+3. Global Server Load Balancer/Multi-site Load Balancer:  — With the increasing number of applications being hosted in cloud data centers, located at varied geographies,   — the GSLB extends the capabilities of general L4 and L7 across various data centers facilitating the efficient global load distribution, without degrading the experience for end users
+
+Types of Load Balancers – Based on Configurations
+1. Hardware Load Balancers:
+2. Software Load Balancers:
+3. Virtual Load Balancers:
+
+Deployment
+    1. Multiple service instance per host
+    2. Service instance per host
+    3. Service instance per VM  eg: AWS  EC2,
+    4. Service instance per container  Eg containered
+    5. Server less  -> it is super set of FAAS.  Service provider : AWS Lambda, Google could Functions, Azure Functions
+    6. Blue green
+    7. Canary
+    8. Rolling
+
+
+EC2 -> Amazon Elastic Compute Cloud (Amazon EC2)
+ECS. -> Elastice Container Service
+
+
+
+
+
+

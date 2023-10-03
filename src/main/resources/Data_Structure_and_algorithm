@@ -1,0 +1,31 @@
+Data structure
+
+
+1. What is data structure ?
+    - The data structure is a collect of data used to store or organise in an efficient manner to use effectively.
+    - Liner -> Array, stack, Queue, LinkedList
+    - Non Linear -> Graph, Tree
+2. What are the applications uses of data structure ?
+    1. Graphics, Artificial intelligence, Operating system, Complier design, Image processing , Statistical analysis, Database management.
+3.  What is difference b/w file structure and data structure ?
+4. Stack ->
+    1. A stack is a linear data structure. The items in a stack are stored in the order of First in last out (FILO) or Last in First out (LIFO)
+    2. Operation -> Push, Pop, Top, Size, isEmpty
+5. Linked List-> Linked list is a liner data structure consisting of nodes where each node is divided into two parts data and address. Every node in the linked list is linked together.
+6. What are the types of searching used in data structure ?
+    1. Linear search
+    2. Binary search
+
+Algorithm
+
+Search
+1. Linear Search
+2. Binary Search 
+
+Sort
+1. Bubble sort  —> 
+2. Selection Sort 
+3. Insertion sort 
+4. Quick Sort 
+5. Merge sort 
+6. Heap s

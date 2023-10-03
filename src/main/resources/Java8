@@ -1,0 +1,80 @@
+JAVA 8
+	Features :
+        1. Lambda expressions
+        2. Method references
+        3. Functional interfaces
+        4. Stream API -Stream API to facilitate pipeline processing
+        5. Default methods
+        6. Base64 Encode Decode
+        7. Static methods in interface
+        8. Optional class
+        9. Collectors class
+        10. ForEach() method
+        11. Parallel array sorting
+        12. Nashorn JavaScript Engine
+        13. Parallel Array Sorting
+        14. Type and Repating Annotations
+        15. IO Enhancements
+        16. Concurrency Enhancements
+        17. JDBC Enhancements etc.
+        18. StringJoiner
+
+	Stream API
+		intermediate -> map, flatMap, filter, limit, sorted, distinct, skip,boxed, mapToInt,
+		terminator -> forEach(),  toArray(),  reduce(),  collect(),  min(),  max(),  count(),  sum()
+			anyMatch(), allMatch(), noneMatch()   :  Return boolean
+			findFirst()
+                - Sequence operation
+                - Idempotent in nature
+
+			  findAny()
+                - Parallel operations
+                - Not idempotent in nature
+
+			reduce()  -> Combine elements of a stream and produces a single value.
+
+	Collectors
+		toList(), toSet(), joining(), toMap(), groupingBy(), counting()
+
+	Collections
+			reverse()  -> Reverse elements of list
+			frequency() -> it give an element number of occurrence in the list.
+
+	Functions
+		identity(),
+
+	Optional Class
+        1. isPresent()
+        2. isEmpty()
+        3.  of()
+        4. ofNullable()
+        5. get()
+        6. orElse
+        7. orElseThrow
+
+	Date API
+        1. LocalDate.now()
+        2. LocalTime.now()
+        3. LocalDateTime.now()
+
+	Functional interface:
+        1. Supplier —> T get(), This abstract method does not accept any argument but instead returns newly generated values.
+        2. Consumer  —>  accept(T t), Takes one argument and doesn't return any value.
+        3. Predicate —> boolean test(Tt), It takes one argument and returns a boolean
+        4. Function —> R apply(T t), It represents a function that accepts one argument and returns a result.
+
+	Questions:
+        - [ ] Difference Stream Intermediate Vs Terminal Operations?
+        - [ ] Difference b/w map and flatMap?
+        - [ ] Difference b/w Collections and Stream?
+        - [ ] What is a default method and when do we use it?
+        - [ ] Differences between Collection API and Stream API?
+        - [ ] Differences between Iterator and Spliterator in Java SE 8?
+        - [ ] Why lambda ?
+
+Java 7
+    - [ ] Catch Multiple Exceptions
+    - [ ] Type Inference for Generic
+    - [ ] String in Switch Statement
+
+

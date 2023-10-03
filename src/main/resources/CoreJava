@@ -1,0 +1,13 @@
+Core Java
+
+
+Finalise() Method
+- It is invoked each time before the object is garbage collected.
+- It is used to perform clean up processing just before object is garbage collected.
+- this method is defined in Object class as
+		protected void finalise(){}
+
+gc()
+- It is used to invoke the garbage collector to perform cleaning processing.
+- The gc() is found in System and Runtime classes
+- It is static method which is used to call finalize before destroying the object.

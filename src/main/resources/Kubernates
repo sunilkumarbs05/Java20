@@ -1,0 +1,96 @@
+Kubernetes
+
+What is Kubernetes?
+- Container management(Orchestration) Tool
+- Developed by google Lab (& later donated to CNCF)
+- Open source
+- Written in Golang
+- Also called K8s
+
+What is Container management / Orchestration Tool
+	Container management tool or engine automated deploying, scaling and managing containerised application on a group of server.
+	That are : Kubernetes, Docker Swarm, Apache Mesos Marathon
+
+What is Docker
+	Docker is a tool which allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies and ship it all out as one package.
+
+	Docker is a tool designed to make it easier to deploy and run application by using container
+
+Container management tool manages
+        1. Deploying
+        2. scheduling
+        3. scaling
+        4. Load balancing
+        5. Batch execution
+        6. Roll backs
+        7. Monitoring
+
+What are the features of Kubernetes ?
+    1. Automatic bin package
+    2. Service discovery and load balancing
+    3. Storage orchestration
+    4. Self healing
+    5. Automated rollout and rollback
+    6. Batch execution
+    7. Horizantal Scaling
+    8.  Secret and Configuration management
+
+Pod
+    - An application container
+    - A unique network IP
+    - Storage resource
+
+Node
+    - Physical machine
+    - Virtual machine
+    - VM on cloud
+
+Secrets and Config map
+- Secrets ->It is a kubernets object that separa  sensitive  data like passwords, keys and token from pods and container. Created outside pods and containers.
+- Config map -> It is a kubernets object that configuration from pods and container. Created outside pods and containers.
+- Secrets and config are stored in ETCD database(Key and value store, size 1MB)
+
+Cluster, Master node and  worker node
+	Master Node
+        - Responsible for managing cluster
+        - Monitor nodes and pods in cluster
+        - When node fails, move the workload of the failed node to another worker node.
+
+Basic Architecture
+	4 Components of master node
+	3 Components of worker node
+	Addons
+	How master and worker node interact
+
+	Master node components
+    - API server —> for all communication (Json over HTTP API)
+    - Scheduler —> schedule pods on nodes
+    - Controller manager —> runs controller
+    - Etcd —> open source, key and value distributed distributed database from coreOS
+
+Kubernates support several contained
+    - Docker
+    - Contained
+    - Cri-o
+    - Rklet
+    - Kubernater CRI (Container runtime interface)
+
+Kubernetes Could based service
+- GKE - Google Kubernetes Engine
+- AKS - Azure Kubernetes service
+- AWS  EKS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

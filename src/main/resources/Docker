@@ -1,0 +1,46 @@
+Docker
+
+Docker: Docker is a tool that allows developers, sys-admins etc. to easily deploy their applications in a sandbox (called containers) to run on the host operating system i.e. Linux.
+
+	It allows users to package an application with all of its dependencies into a standardised unit for software development.
+
+Image:- A Docker image is a file which has set of instructions to build a Docker container, like a template
+Container: it’s a running version of image
+
+A Dockerfile must be created with no extension.
+
+File Name and command inside: Dockerfile
+
+	FROM openjdk:8-jdk-alpine
+	VOLUME /tmp
+	EXPOSE 5000
+	ADD build/libs/*.jar app.jar
+	ENTRYPOINT [ "sh", "-c", "java -jar /app.jar" ]
+
+Docker command
+- docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE
+- docker run -d -p 8761:8761 springcloud/eureka
+
+- docker container ls
+- docker container ls -l
+- docker container ls -a
+- docker container start fed549e69e9d
+- docker container stop fed549e69e9d
+- docker container logs c165f459e7d7
+- docker container rm fed549e69e9d
+- docker container prune
+
+- docker images
+- docker image history f8049a029560
+- docker image remove f8049a029560
+
+Docker Container Lifecycle Management
+* Created: A container that has been created but not started
+* Running: A container running with all its processes
+* Paused: A container whose processes have been paused
+* Stopped: A container whose processes have been stopped
+* Deleted: A container in a dead state
+
+
+https://k21academy.com/docker-kubernetes/docker-container-lifecycle-management/
+
