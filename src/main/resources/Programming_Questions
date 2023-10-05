@@ -53,7 +53,7 @@ Array
     17. Given a sorted array and a number x, find the pair in array whose sum is closest to x
     18. Write a java program to find common elements between two arrays?
     19. Write a java program to find intersection of two arrays?
-    20.
+
 
 Map
     1. Write a program to sort a map by value
@@ -70,3 +70,6 @@ Algorithm
     3. Factorial    ———>  0! = 1;  4! = 4*3*2*1 = 24
         1. Factorial using loop
         2. Factorial using recursion
+
+Questions:
+    1. Remove all duplicates Employee from Employee list having same name( Using stream function)

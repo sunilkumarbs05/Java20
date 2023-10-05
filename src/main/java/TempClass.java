@@ -2,27 +2,36 @@
 //Input: MY NAME IS ABC
 //Output: CB ASIE MA NYM
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collectors;
+// Array 1, 2, 2, 3, 3, 3, 4
 
+// Return last index of given element x 3
 public class TempClass {
+
     public static void main(String[] args) {
+        int array[] = {1, 2, 2, 3, 3, 3, 4};
+        int number = 2;
+        int left = 0;
+        int right = array.length - 1;
+        int mid = 0;
+        int position = -1;
 
-        // Duplicate character in string
+        while (left <= right) {
+            mid = (left + right) / 2;
+            if (array[mid] == number) {
+                position = mid;
+                break;
+            }
+            if (array[mid] < number) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
 
-        String value = "Hello good Afternoon";
-
-        String array[] = value.split("");
-
-        List<String> duplicate = Arrays.stream(array).
-                collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-                .entrySet()
-                .stream().filter(entry -> entry.getValue() > 1)
-                .map(entry -> entry.getKey()).collect(Collectors.toList());
-
-        System.out.println(duplicate);
+        if (position == -1) {
+            System.out.println(" Element not found");
+        } else {
+            System.out.println("Element found at " + position);
+        }
     }
-
 }
