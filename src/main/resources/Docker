@@ -1,10 +1,10 @@
 Docker
 
-Docker: Docker is a tool that allows developers, sys-admins etc. to easily deploy their applications in a sandbox (called containers) to run on the host operating system i.e. Linux.
+Docker: Docker is a tool that allows developers, sys-admins etc. to easily deploy their applications in a sandbox (called containers) to run on the host operating system i.e. Linux.
 
-	It allows users to package an application with all of its dependencies into a standardised unit for software development.
+	It allows users to package an application with all of its dependencies into a standardised unit for software development.
 
-Image:- A Docker image is a file which has set of instructions to build a Docker container, like a template
+Image:- A Docker image is a file which has set of instructions to build a Docker container, like a template
 Container: it’s a running version of image
 
 A Dockerfile must be created with no extension.

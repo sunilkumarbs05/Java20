@@ -114,7 +114,7 @@ Communication
         3. gRPC
 
 Integration
-1. API gateway : The API Gateway serves as a reverse proxy to accept API calls from the client application, forwarding this traffic to the appropriate service.
+1. API gateway : The API Gateway serves as a reverse proxy to accept API calls from the client application, forwarding this traffic to the appropriate service.
 2. Aggregator pattern  :  Collaborating data returned by each service
     1. Chained Pattern
     2. Branch Pattern
@@ -135,7 +135,7 @@ Cross cutting concern patterns
 			Tools: Spring Cloud config, Consul, Zookeeper, etcd.
 	2. Service discovery
 		Tools : Consul, Etcd, Apache Zookeeper.
-      3. Circuit breaker:   It allows developers to prevent cascading failures in microservices architecture by invoking 						remote services through a proxy
+      3. Circuit breaker: It allows developers to prevent cascading failures in microservices architecture by invoking 						remote services through a proxy
 			States: Closed, Open, Half Open
 			Tools: Spring Cloud Circuit breaker, Istio, Hystrix
 
@@ -151,9 +151,9 @@ Load balance:
         - Source Id hash
 
 Types of Load Balancers – Based on Functions
-1. Network Load Balancer / Layer 4 (L4) Load Balancer:   — Based on the network variables like IP address and destination ports.  — Network Load balancing is the distribution of traffic at the transport level through the routing decisions. Such load balancing is TCP i.e. level 4  
-2. Application Load Balancer / Layer 7 (L7) Load Balancer:  — Layer 7 load balancer distributes the requests based on multiple parameters at the application level.   — Application load balancers control the server traffic based on the individual usage and behavior. 
-3. Global Server Load Balancer/Multi-site Load Balancer:  — With the increasing number of applications being hosted in cloud data centers, located at varied geographies,   — the GSLB extends the capabilities of general L4 and L7 across various data centers facilitating the efficient global load distribution, without degrading the experience for end users
+1. Network Load Balancer / Layer 4 (L4) Load Balancer:  — Based on the network variables like IP address and destination ports.  — Network Load balancing is the distribution of traffic at the transport level through the routing decisions. Such load balancing is TCP i.e. level 4  
+2. Application Load Balancer / Layer 7 (L7) Load Balancer: — Layer 7 load balancer distributes the requests based on multiple parameters at the application level.   — Application load balancers control the server traffic based on the individual usage and behavior. 
+3. Global Server Load Balancer/Multi-site Load Balancer:  — With the increasing number of applications being hosted in cloud data centers, located at varied geographies,   — the GSLB extends the capabilities of general L4 and L7 across various data centers facilitating the efficient global load distribution, without degrading the experience for end users
 
 Types of Load Balancers – Based on Configurations
 1. Hardware Load Balancers:
@@ -171,7 +171,7 @@ Deployment
     8. Rolling
 
 
-EC2 -> Amazon Elastic Compute Cloud (Amazon EC2)
+EC2 -> Amazon Elastic Compute Cloud (Amazon EC2)
 ECS. -> Elastice Container Service
 
 

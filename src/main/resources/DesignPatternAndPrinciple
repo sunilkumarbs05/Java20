@@ -15,7 +15,7 @@ SOLID
 - Dependency inversion Principle —> We must use abstraction instead for concrete implementations. High level modules should not depend on the low level module.
 
 What is design pattern?
-	A design pattern   provides a general reusable solution for the common problems that occur in software design. The pattern typically shows relationships and interactions between classes or objects.
+	A design pattern provides a general reusable solution for the common problems that occur in software design. The pattern typically shows relationships and interactions between classes or objects.
 
 Design Pattern
 
@@ -67,12 +67,12 @@ Builder Design Pattern
 Adapter pattern
 	Adapter pattern works as a bridge between two incompatible interfaces
 
-
 Bridge Pattern
-	A Bridge Pattern says that just   "decouple the functional abstraction from the implementation so that the two can vary independently”.
+	A Bridge Pattern says that just "decouple the functional abstraction from the implementation so that the two can vary independently”.
 
 Composite Pattern
-	Composite pattern is used where we need to treat a group of objects in similar way as a single object. Composite pattern composes objects in term of a tree structure to represent part as well as whole hierarchy.
+	Composite pattern is used where we need to treat a group of objects in similar way as a single object.
+	Composite pattern composes objects in term of a tree structure to represent part as well as whole hierarchy.
 
 Decorator Pattern
 	Decorator pattern allows a user to add new functionality to an existing object without altering its structure.
@@ -98,7 +98,8 @@ Chain Of Responsibility Pattern
 
 Command Pattern
 
-	A request is wrapped under an object as command and passed to invoker object. Invoker object looks for the appropriate object which can handle this command and passes the command to the corresponding object which executes the command.
+	A request is wrapped under an object as command and passed to invoker object.
+	Invoker object looks for the appropriate object which can handle this command and passes the command to the corresponding object which executes the command.
 
 Example:
     - Separate CRUD commands to operate on a table for insert, update, delete, select etc.
@@ -155,7 +156,7 @@ Benefits:
 
 Strategy pattern
 
-	Strategy pattern   is a behavioural design pattern that allows the behaviour of an object to be selected at runtime.   
+	Strategy pattern is a behavioural design pattern that allows the behaviour of an object to be selected at runtime.
 
 	Benefits:
     - It defines each behaviour within its own class, eliminating the need for conditional statements
