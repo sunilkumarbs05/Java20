@@ -1,0 +1,68 @@
+@SpringBootTest : this annotation loads the complete Spring application context
+
+@DataJpaTest -> => This annotation to test the persistence layer components
+                => it will autoconfigure in-memory embedded databases
+                => scan for @Entity classes and Spring Data JPA repositories.
+                => This Annotation doesn’t load other Spring beans (@Components, @Controller, @Service, and annotated beans) into ApplicationContext
+
+
+            @BeforeEach is used to signal that the annotated method should be executed before each @Test, @RepeatedTest, @ParameterizedTest, @TestFactory, and @TestTemplate method in the current test class.
+            Method Signatures
+
+            @DisplayName is used to declare a custom display name for the annotated test class or test method.
+
+@Test is used to signal that the annotated method is a test method.
+    Test methods must not be private or static and must not return a value.
+    Test methods may optionally declare parameters to be resolved by ParameterResolvers.
+
+@ParameterizedTest is used to signal that the annotated method is a parameterized test method.
+                    Such methods must not be private or static.
+                    Execute a single test method multiple times with different parameters
+
+@ValueSource annotation :- we can pass an array of literal values to the test method.
+    @ValueSource(strings = {"", "  "})
+    @ValueSource(ints = {1, 3, 5, -3, 15, Integer.MAX_VALUE})
+
+@NullSource :-  we can pass a single null value to a parameterized test method
+@EmptySource :- we can pass a empty value to a parameterized test method
+        @ParameterizedTest
+        @EmptySource
+        void isBlank_ShouldReturnTrueForEmptyStrings(String input) {
+            assertTrue(Strings.isBlank(input));
+        }
+
+@NullAndEmptySource : In order to pass both null and empty values
+@EnumSource : In order to run a test with different values from an enumeration
+@CsvSource : Pass an input value and an expected value to the test method
+             Compute the actual result with those input values
+             Assert the actual value with the expected value
+
+        @ParameterizedTest
+        @CsvSource({"test,TEST", "tEst,TEST", "Java,JAVA"})
+        void toUpperCase_ShouldGenerateTheExpectedUppercaseValue(String input, String expected) {
+            String actualValue = input.toUpperCase();
+            assertEquals(expected, actualValue);
+        }
+
+Example
+ @Test
+    public void givenEmployeeObject_whenSave_thenReturnSavedEmployee(){
+
+        //given - precondition or setup
+        Employee employee = Employee.builder()
+                .firstName("Ramesh")
+                .lastName("Ramesh")
+                .email("ramesh@gmail,com")
+                .build();
+        // when - action or the behaviour that we are going test
+        Employee savedEmployee = employeeRepository.save(employee);
+
+        // then - verify the output
+        assertThat(savedEmployee).isNotNull();
+        assertThat(savedEmployee.getId()).isGreaterThan(0);
+    }
+
+
+ Next go though- rest api unit test   https://reflectoring.io/spring-boot-test/
+Reference Link
+https://www.baeldung.com/parameterized-tests-junit-5
