@@ -1,3 +1,9 @@
+Interview question;
+How to test private, static and final method;
+How to mock void method;
+
+
+
 @SpringBootTest : this annotation loads the complete Spring application context
 
 @DataJpaTest -> => This annotation to test the persistence layer components
@@ -5,11 +11,10 @@
                 => scan for @Entity classes and Spring Data JPA repositories.
                 => This Annotation doesn’t load other Spring beans (@Components, @Controller, @Service, and annotated beans) into ApplicationContext
 
-
-            @BeforeEach is used to signal that the annotated method should be executed before each @Test, @RepeatedTest, @ParameterizedTest, @TestFactory, and @TestTemplate method in the current test class.
+@BeforeEach is used to signal that the annotated method should be executed before each @Test, @RepeatedTest, @ParameterizedTest, @TestFactory, and @TestTemplate method in the current test class.
             Method Signatures
 
-            @DisplayName is used to declare a custom display name for the annotated test class or test method.
+@DisplayName is used to declare a custom display name for the annotated test class or test method.
 
 @Test is used to signal that the annotated method is a test method.
     Test methods must not be private or static and must not return a value.

@@ -9,7 +9,7 @@ Programming Questions
     8. How do you reverse a linked list in Java 8?
     9. Can you create a pyramid of characters in Java?
     10. Check for balanced parentheses in an expression in java
-    11.
+    11. Java8 Program to find minimum element in the ArrayList.
 
 
 Number
@@ -73,3 +73,4 @@ Algorithm
 
 Questions:
     1. Remove all duplicates Employee from Employee list having same name( Using stream function)
+    2. Check for Balanced Brackets in an expression

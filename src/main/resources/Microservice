@@ -136,9 +136,10 @@ Cross cutting concern patterns
 	2. Service discovery
 		Tools : Consul, Etcd, Apache Zookeeper.
       3. Circuit breaker: It allows developers to prevent cascading failures in microservices architecture by invoking 						remote services through a proxy
+			The Circuit Breaker design pattern is used to stop the request and response process if a service is not working,
 			States: Closed, Open, Half Open
 			Tools: Spring Cloud Circuit breaker, Istio, Hystrix
-
+https://medium.com/geekculture/design-patterns-for-microservices-circuit-breaker-pattern-276249ffab33
 
 Load balance:
 - Efficient distribution of requests among all the available instances.

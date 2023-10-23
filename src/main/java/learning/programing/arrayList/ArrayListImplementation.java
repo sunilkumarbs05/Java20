@@ -2,10 +2,10 @@ package learning.programing.arrayList;
 
 import java.util.Arrays;
 
-public class   ArrayListImplementation {
+public class ArrayListImplementation {
 
     public static void main(String[] args) {
-        ArrayListImp arrayListImp = new ArrayListImp();
+        ArrayListImp<Integer> arrayListImp = new ArrayListImp<>();
         arrayListImp.add(10);
         arrayListImp.add(20);
         arrayListImp.add(30);
@@ -26,7 +26,7 @@ public class   ArrayListImplementation {
 
 }
 
-class ArrayListImp {
+class ArrayListImp<E> {
     private Object store[];
     private int size;
 
@@ -35,32 +35,32 @@ class ArrayListImp {
         this.size = 0;
     }
 
-    public Object get(int index) {
+    public E get(int index) {
         if (index >= size)
             throw new ArrayIndexOutOfBoundsException();
-        return store[index];
+        return (E) store[index];
     }
 
-    public boolean add(Object object) {
-        if (size >= store.length - 2) {
+    public boolean add(E object) {
+        if (size == store.length - 1) {
             resize();
-            System.out.println("Resize happen : now size is" + store.length);
+            System.out.println("Resize happen : now size is " + store.length);
         }
         store[size++] = object;
         return true;
     }
 
-    public Object remove(int index) {
+    public E remove(int index) {
 
         if (index >= size)
             throw new ArrayIndexOutOfBoundsException();
         Object temp = store[index];
         while (index < size) {
             store[index] = store[++index];
-            store[index] = null;
         }
+        store[index] = null;
         size--;
-        return temp;
+        return (E) temp;
     }
 
     public int size() {
@@ -68,13 +68,14 @@ class ArrayListImp {
     }
 
     public void display() {
-        for (Object object : store) {
-            System.out.print(object + " ");
+        for (int i =0; i<size; i++) {
+            System.out.print(store[i] + " ");
         }
+        System.out.println("");
     }
 
     private void resize() {
-        store = Arrays.copyOf(store,store.length + store.length / 2);
+        store = Arrays.copyOf(store, store.length + store.length / 2);
     }
 }
 

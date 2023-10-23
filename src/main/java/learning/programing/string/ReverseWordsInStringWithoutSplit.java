@@ -1,36 +1,34 @@
 package learning.programing.string;
 
+//Input: Today is saturday
+//Output: saturday is Today
 public class ReverseWordsInStringWithoutSplit {
     public static void main(String[] args) {
-        String message = "Java is an Ocean";
-
-        char oldArray[] = message.toCharArray();
-        // Print the above string as "Ocean an is Java"
-
-        int index = -1, currentIndex = -1;
-        char newArray[] = new char[message.length()];
-        int j = 1;
-
-        for (int i = 0; i < oldArray.length; i++) {
-            if (oldArray[i] == ' ') {
-                while (index != currentIndex) {
-                    newArray[message.length() - j] = oldArray[currentIndex--];
-                    j++;
-
-                }
-                newArray[message.length() - j++] = ' ';
-                index = i;
-                currentIndex = i;
-
-            } else {
-                currentIndex++;
+        String value = "Hi Sunil Good morning";
+        char arr[] = value.toCharArray();
+        int start = 0;
+        for (int end = 0; end < arr.length; end++) {
+            if (arr[end] == ' ') {
+                reverse(arr, start, end - 1);
+                start = end + 1;
             }
+        }
+        reverse(arr, start, arr.length - 1);
 
+        reverse(arr, 0, arr.length - 1);
+
+        System.out.println(arr);
+
+    }
+
+    public static void reverse(char arr[], int start, int end) {
+        char temp;
+        while (start < end) {
+            temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
         }
-        while (index != currentIndex) {
-            newArray[message.length() - j] = oldArray[currentIndex--];
-            j++;
-        }
-        System.out.println((new String(newArray)).toString());
     }
 }

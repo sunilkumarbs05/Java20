@@ -1,7 +1,6 @@
 package learning.algorithm.stack;
 
-import learning.practice.LinkedLIstStackPractice;
-
+//https://www.geeksforgeeks.org/how-to-implement-stack-in-java-using-linkedlist-and-generics/
 public class LinkedStack<T> {
 
     private class Node {

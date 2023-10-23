@@ -11,7 +11,7 @@ public class Stack {
     }
 
     public void push(int value) {
-        if (index == length) {
+        if (index == length -1) {
             resize();
         }
         arr[++index] = value;
@@ -31,6 +31,7 @@ public class Stack {
         int temp[] = new int[length + length];
         System.arraycopy(arr, 0, temp, 0, length);
         length = length + length;
+        arr = temp;
     }
 
     public int size() {
@@ -57,7 +58,19 @@ public class Stack {
 
 //        stack.display();
 
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
+        stack.push(6);
+        stack.push(7);
+        stack.push(8);
+        stack.push(9);
         stack.push(10);
+        stack.push(11);
+        stack.push(12);
+        stack.push(13);
         stack.push(20);
         stack.push(30);
         stack.push(40);
