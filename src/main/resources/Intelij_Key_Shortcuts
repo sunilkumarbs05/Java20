@@ -25,6 +25,17 @@ Cmd + Shift + A         => to navigate to desired action
 Double Shift            => to search everywhere
 Cmd + E                 => to navigate to recent files
 Shift + Cmd + E         => to navigate to recent edited files
+Shift + Left or Right   => to select one character at a time
+Shift + Alt + left or Right     => to select one word at a time
+Shift + Cmd + Left or Right     => to select everything from where the cursor is the beginning or the end of current line
+Alt + Up                => to extend selection
+Alt + Down              => to shrink selection
+Shift + Ctrl + Space    => to invoke smart code completion
+Shift + Ctrl + Space twice => to invoke smart code
+Ctrl + Space (Twice)    => to display static method
+Alt + Enter             => to add a static import
+Ctrl + J                => to display postfix completion suggestion list
+Cmd + N                 => to display generate menu in class file
 
 
 ---- Windows ----
@@ -53,3 +64,14 @@ Ctrl + Shift + A        => to navigate to desired action
 Double Shift            => to search everywhere
 Ctrl + E                => to navigate to recent files
 Shift + Ctrl + E        => to navigate to recent edited files
+Shift + Left or Right   => to select one character at a time
+Shift + Ctrl + left or Right     => to select one word at a time
+Shift + Home or End     => to select everything from where the cursor is the beginning or the end of current line
+Ctrl + W                => to extend selection
+Shift + Ctrl + W        => to shrink selection
+Shift + Ctrl + Space    => to invoke smart code completion
+Shift + Ctrl + Space twice => to invoke smart code
+Ctrl + Space (Twice)    => to display static method
+Alt + Enter             => to add a static import
+Ctrl + J                => to display postfix completion suggestion list
+Ctrl + insert           => to display generate menu in class file
