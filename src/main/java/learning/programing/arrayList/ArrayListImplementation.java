@@ -78,4 +78,3 @@ class ArrayListImp<E> {
         store = Arrays.copyOf(store, store.length + store.length / 2);
     }
 }
-

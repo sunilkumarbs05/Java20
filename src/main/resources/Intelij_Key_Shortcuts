@@ -1,0 +1,55 @@
+---------- Mac ------------
+fn + up                 => to scroll page up
+fn + down arrow         => to scroll page down
+fn + cmd + right        => to move the cursor to the end of current file
+fn + cmd + left         => to move the cursor to the beginning of current file
+cmd + right             => to move the cursor to the beginning for the line
+cmd + left              => to move the cursor to the end of the line
+Shift + Alt + Up        => to move line up
+Shift + Alt + Down      => to move line down
+Shift + Cmd + Up        => to move statement up
+Shift + Cmd + Down      => to move statement down
+Cmd + D                 => to duplicate current line
+Cmd + Delete            => to delete current line
+Cmd + P                 => to view suggested parameters of a method
+Cmd + /                 => to comment or uncomment current selection
+Alt + Cmd + /           => to block comment or uncomment current selection
+Cmd + +                 => to expand current code block
+Cmd + -                 => to fold current code block
+Cmd + O                 => to navigate to class
+Cmd + [                 => to navigate to back
+Cmd + ]                 => to navigate to forward
+Alt + Cmd + O           => to navigate to symbol
+Shift + Cmd + O         => to navigate to file
+Cmd + Shift + A         => to navigate to desired action
+Double Shift            => to search everywhere
+Cmd + E                 => to navigate to recent files
+Shift + Cmd + E         => to navigate to recent edited files
+
+
+---- Windows ----
+
+ctrl + home             => to move the cursor to the beginning of current file
+ctrl + end              => to move the cursor to the end of current file
+Page Up                 => to scroll page up
+Page Down               => to scroll page down
+Shift + Alt + Up        => to move line up
+Shift + Alt + Down      => to move line down
+Shift + Ctrl + Up       => to move statement up
+Shift + Ctrl + Down     => to move statement down
+Ctrl + D                => to duplicate current line
+Ctrl + Y                => to delete current line
+Ctrl + P                => to view suggested parameters of a method
+Ctrl + /                => to comment or uncomment current selection
+Shift + Ctrl + /        => to block comment or uncomment current selection
+Ctrl + +                => to expand current code block
+Ctrl + -                => to fold current code block
+Ctrl + N                => to navigate to class
+Ctrl + Alt + Left       => to navigate to back
+Ctrl + Alt + Right      => to navigate to forward
+Shift + Ctrl + Alt + N  => to navigate to symbol
+Shift + Ctrl + O        => to navigate to file
+Ctrl + Shift + A        => to navigate to desired action
+Double Shift            => to search everywhere
+Ctrl + E                => to navigate to recent files
+Shift + Ctrl + E        => to navigate to recent edited files

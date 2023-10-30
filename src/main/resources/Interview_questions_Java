@@ -1,1 +1,12 @@
-Cross-Site Request Forgery (CSRF) is an attack that forces authenticated users to submit a request to a Web application against which they are currently authenticated
+1.Cross-Site Request Forgery (CSRF) is an attack that forces authenticated users to submit a request to a Web application against which they are currently authenticated
+2.Apart from the security aspect, what are the reasons behind making strings immutable in Java?
+    Because of security, synchronization, concurrency, caching, and class loading, the String is immutable in Java
+
+3. How to make it thread safe ?
+    1. Synchronization
+    2. Volatile Keyword
+    3. Final Keyword
+    4. Atomic Variable
+
+4. How synchronised block different from Lock ?
+5.

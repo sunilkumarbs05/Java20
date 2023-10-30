@@ -20,10 +20,14 @@ Spring boot and Spring FrameWork
 7. What is Spring Bean ?
 8. Difference b/w constructor and setter injection ?
 9. What are the been scope spring provided?
-    1. Singleton
-    2. Prototype
-    3. Request
-    4. Session
+    https://www.baeldung.com/spring-bean-scopes
+    1. Singleton - When we define a bean with the singleton scope, the container creates a single instance of that bean;
+                   all requests for that bean name will return the same object, which is cached.
+                   Any modifications to the object will be reflected in all references to the bean.
+                   This scope is the default value if no other scope is specified.
+    2. Prototype - A bean with the prototype scope will return a different instance every time it is requested from the container.
+    3. Request - The request scope creates a bean instance for a single HTTP request.
+    4. Session - The session scope creates a bean instance for an HTTP Session.
     5. Global session(Not Exist in new version)
 10. What
 11. What is autowiring in spring ? What are the different modes it has?
@@ -62,9 +66,11 @@ Spring boot and Spring FrameWork
     3. External Caching -> Ehcache
     4. Page Caching -> NginX
     5. Query Caching -> ORM tools : Hibernate
+
 30. How can you handle exceptions in a spring boot application ?
     1. Global exception handling -> @ControllerAdvice and @ExceptionHandler
     2. Custon exception handling  -> By extending RuntimeException or Exception
+
 31. What are some common design patterns used in Spring application
     1. Singleton  -> By default spring creates singleton object
     2. Factory  -> Spring container
@@ -74,3 +80,17 @@ Spring boot and Spring FrameWork
     6. Observer -> ApplicationEventPublisher, ApplicationListener
     7. Facade  -> MVC
     8. Strategy  ->
+
+32. What is circular dependency in spring ?
+    A circular dependency occurs when a bean A depends on another bean B, and the bean B depends on bean A as well: Bean A → Bean B → Bean A.
+     Of course, we could have more beans implied: Bean A → Bean B → Bean C → Bean D → Bean E → Bean A
+
+33. How to resolve circular dependency in spring ?
+    To fix circular dependency is to use setter injection instead of constructor injection. With setter injection,
+    Spring Boot will first create the object and then set the required dependencies using the setter method.
+    Another way to fix circular dependency is to use lazy initialization.
+
+34. How does spring bean get initialized.
+    When we run the program then, first of all, the spring container gets started.
+    After that, the container creates the instance of a bean as per the request, and then dependencies are injected.
+    And finally, the bean is destroyed when the spring container is closed.
