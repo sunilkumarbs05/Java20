@@ -1,6 +1,6 @@
 package learning.designPattern.structural.composite;
 
-public class Leaf implements Component{
+public class Leaf implements Component {
     public String name;
     private int price;
 
@@ -11,6 +11,6 @@ public class Leaf implements Component{
 
     @Override
     public void showPrice() {
-        System.out.println("Name: %s , price: %d".formatted(name,price));
+        System.out.println("Name: %s , price: %d".formatted(name, price));
     }
 }

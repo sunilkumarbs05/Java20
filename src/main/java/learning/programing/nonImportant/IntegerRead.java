@@ -8,6 +8,6 @@ public class IntegerRead {
         Scanner scanner = new Scanner(System.in);
         String value = scanner.nextLine();
         Integer value1 = scanner.nextInt();
-        System.out.println("Entered value  :"+value+" "+value1);
+        System.out.println("Entered value  :" + value + " " + value1);
     }
 }

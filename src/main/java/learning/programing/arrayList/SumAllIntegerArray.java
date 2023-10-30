@@ -13,9 +13,9 @@ public class SumAllIntegerArray {
 
 
         int values[] = {10, 20, 30};
-        System.out.println("Sum of all integer is : " +  Arrays.stream(values).sum());
+        System.out.println("Sum of all integer is : " + Arrays.stream(values).sum());
 
-        System.out.println("Sum of all integer is : " +  Arrays.stream(values).reduce(0,(i1,i2) -> i1+i2));
+        System.out.println("Sum of all integer is : " + Arrays.stream(values).reduce(0, (i1, i2) -> i1 + i2));
 
 
     }

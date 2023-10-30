@@ -2,10 +2,6 @@ package learning.java.coreJava;
 
 public class Example_1 {
 
-    public Example_1(){
-        System.out.println("Test constructor...");
-    }
-
     static {
         System.out.println("Static block...");
     }
@@ -14,6 +10,9 @@ public class Example_1 {
         System.out.println("Final block...");
     }
 
+    public Example_1() {
+        System.out.println("Test constructor...");
+    }
 
     public static void main(String[] args) {
         //TestClass testClass = new TestClass();  // comment line to check behavior

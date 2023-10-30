@@ -1,6 +1,6 @@
 package learning.designPattern.behavioral.state;
 
-public class FirstYearKid implements KidBehavior{
+public class FirstYearKid implements KidBehavior {
 
     @Override
     public void play() {

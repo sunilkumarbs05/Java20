@@ -52,8 +52,8 @@ public class Car {
             return this;
         }
 
-        public Car build(){
-            return  new Car(number,name,color);
+        public Car build() {
+            return new Car(number, name, color);
         }
     }
 }

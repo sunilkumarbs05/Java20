@@ -1,11 +1,10 @@
 package learning.clarification;
 
 public class VariableDeclaration {
-    int a;
-    Integer b;
-
     static int c;
     static Integer d;
+    int a;
+    Integer b;
 
     public static void main(String[] args) {
         int e;

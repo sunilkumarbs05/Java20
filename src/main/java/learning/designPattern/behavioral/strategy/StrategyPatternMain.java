@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class StrategyPatternMain {
     public static void main(String[] args) throws NumberFormatException, IOException {
 
-       float value1 =10, value2 =3;
+        float value1 = 10, value2 = 3;
         Context context = new Context(new Addition());
         System.out.println("Addition = " + context.executeStrategy(value1, value2));
 

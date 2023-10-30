@@ -15,11 +15,10 @@ public class OptionalException {
         }
 
 
-
         Optional<String> value = Optional.empty();
         // It returns value of an Optional. if value is not present, it throws an NoSuchElementException
         try {
-        System.out.println("Getting value: "+value.get());
+            System.out.println("Getting value: " + value.get());
         } catch (Exception e) {
             System.out.println("\n-------------------------------------------------------\n");
             e.printStackTrace();

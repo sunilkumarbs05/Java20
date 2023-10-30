@@ -12,14 +12,14 @@ public class InterpreterClient {
         this.interpreterEngine = interpreterEngine;
     }
 
-    public int interpreter(String input){
-        Expression expression=null;
-        if(input.contains("add")){
-           expression = new AdditionExpression(input);
+    public int interpreter(String input) {
+        Expression expression = null;
+        if (input.contains("add")) {
+            expression = new AdditionExpression(input);
         } else if (input.contains("sub")) {
             expression = new SubstractionExpression(input);
         } else {
-            throw  new RuntimeException("input is invalid");
+            throw new RuntimeException("input is invalid");
         }
         int result = expression.interpret(interpreterEngine);
         return result;

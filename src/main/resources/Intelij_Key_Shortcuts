@@ -36,6 +36,11 @@ Ctrl + Space (Twice)    => to display static method
 Alt + Enter             => to add a static import
 Ctrl + J                => to display postfix completion suggestion list
 Cmd + N                 => to display generate menu in class file
+      --  Git --
+Cmd + D                 => to show diff of a file in commit changes Dialog
+Cmd + K                 => to commit project to VCS
+Alt + Cmd + Z           => to revert a file in commit changes Dialog
+Ctrl + V                => to bring up VCS operation popup
 
 
 ---- Windows ----
@@ -75,3 +80,8 @@ Ctrl + Space (Twice)    => to display static method
 Alt + Enter             => to add a static import
 Ctrl + J                => to display postfix completion suggestion list
 Ctrl + insert           => to display generate menu in class file
+--  Git --
+Ctrl + D                => to show diff of a file in commit changes Dialog
+Ctrl + K                => to commit project to VCS
+Alt + Ctrl + Z          => to revert a file in commit changes Dialog
+Alt + Back Quote        => to bring up VCS operation popup

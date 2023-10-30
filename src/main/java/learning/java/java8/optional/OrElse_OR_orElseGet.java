@@ -13,12 +13,12 @@ public class OrElse_OR_orElseGet {
         String name1 = Optional.of("baeldung")
                 .orElseGet(() -> getRandomName());
 
-        System.out.println(name +"   "+name1);
+        System.out.println(name + "   " + name1);
 
 
     }
 
-    public static  String getRandomName() {
+    public static String getRandomName() {
         System.out.println("getRandomName() method - start");
 
         Random random = new Random();

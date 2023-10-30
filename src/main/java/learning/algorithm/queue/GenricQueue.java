@@ -2,21 +2,29 @@ package learning.algorithm.queue;
 
 public class GenricQueue<T> {
 
-    private class Node {
-        T data;
-        Node next;
-
-        public Node(T data) {
-            this.data = data;
-            this.next = null;
-        }
-    }
-
     Node front;
     Node rear;
-
     public GenricQueue() {
         this.front = this.rear = null;
+    }
+
+    public static void main(String[] args) {
+        GenricQueue<Integer> queue = new GenricQueue<>();
+        System.out.println("Display elements");
+        queue.display();
+        System.out.println("Push 10");
+        queue.enqueue(10);
+        System.out.println("-----------------");
+        queue.display();
+        System.out.println("\n Push 20, 30 ,40");
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.enqueue(40);
+        System.out.println("Display elements");
+        queue.display();
+        System.out.println("Pop elements " + queue.dequeue());
+        System.out.println("Display elements");
+        queue.display();
     }
 
     public void enqueue(T data) {
@@ -52,23 +60,14 @@ public class GenricQueue<T> {
         }
     }
 
-    public static void main(String[] args) {
-        GenricQueue<Integer> queue = new GenricQueue<>();
-        System.out.println("Display elements");
-        queue.display();
-        System.out.println("Push 10");
-        queue.enqueue(10);
-        System.out.println("-----------------");
-        queue.display();
-        System.out.println("\n Push 20, 30 ,40");
-        queue.enqueue(20);
-        queue.enqueue(30);
-        queue.enqueue(40);
-        System.out.println("Display elements");
-        queue.display();
-        System.out.println("Pop elements " + queue.dequeue());
-        System.out.println("Display elements");
-        queue.display();
+    private class Node {
+        T data;
+        Node next;
+
+        public Node(T data) {
+            this.data = data;
+            this.next = null;
+        }
     }
 
 

@@ -1,6 +1,6 @@
 package learning.designPattern.structural.adapter;
 
-public class ColleageStudent implements  Student{
+public class ColleageStudent implements Student {
     private String name;
     private String surname;
     private String email;

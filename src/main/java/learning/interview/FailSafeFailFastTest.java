@@ -16,20 +16,20 @@ public class FailSafeFailFastTest {
 //            list.add(50);   // ConcurrentModificationException --> Fail fast
         }
         Iterator<Integer> iterator = list.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
-           iterator.remove();
+            iterator.remove();
         }
 
         System.out.println(" After iterator -----------------------------");
         System.out.println(list);
 
 
-        CopyOnWriteArrayList<Integer> copyOnWriteArrayList  = new CopyOnWriteArrayList<>();
+        CopyOnWriteArrayList<Integer> copyOnWriteArrayList = new CopyOnWriteArrayList<>();
         copyOnWriteArrayList.add(20);
         copyOnWriteArrayList.add(30);
         for (Integer integer : copyOnWriteArrayList) {
-              copyOnWriteArrayList.add(100);
+            copyOnWriteArrayList.add(100);
         }
 
         System.out.println(copyOnWriteArrayList);

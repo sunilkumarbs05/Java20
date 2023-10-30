@@ -1,6 +1,6 @@
 package learning.designPattern.behavioral.state;
 
-public class ThirdYearKid implements KidBehavior{
+public class ThirdYearKid implements KidBehavior {
     @Override
     public void play() {
         System.out.println("Run and roll");

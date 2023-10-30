@@ -2,13 +2,13 @@ package learning.programing.string;
 
 public class Palindrome {
 
-    public static boolean isPalindrome(String str){
-        StringBuilder sb=new StringBuilder(str);
+    public static boolean isPalindrome(String str) {
+        StringBuilder sb = new StringBuilder(str);
         sb.reverse();
-        String rev=sb.toString();
-        if(str.equals(rev)){
+        String rev = sb.toString();
+        if (str.equals(rev)) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }

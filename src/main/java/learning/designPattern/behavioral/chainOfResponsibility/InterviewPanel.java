@@ -2,6 +2,7 @@ package learning.designPattern.behavioral.chainOfResponsibility;
 
 public class InterviewPanel {
     private Round firstRound;
+
     public InterviewPanel() {
         TechnicalRound technicalRound = new TechnicalRound();
         ManageRound manageRound = new ManageRound();
@@ -11,7 +12,7 @@ public class InterviewPanel {
         manageRound.setNext(hrRound);
     }
 
-    public boolean hire(Candidate candidate){
+    public boolean hire(Candidate candidate) {
         return firstRound.validate(candidate);
     }
 }

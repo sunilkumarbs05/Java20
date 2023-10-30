@@ -10,40 +10,6 @@ public class Stack {
         length = 10;
     }
 
-    public void push(int value) {
-        if (index == length -1) {
-            resize();
-        }
-        arr[++index] = value;
-    }
-
-    public int pop() {
-        if (index == -1) {
-            throw new ArrayIndexOutOfBoundsException("Stack is empty");
-        }
-        int value = arr[index];
-        arr[index] = 0;
-        index--;
-        return value;
-    }
-
-    public void resize() {
-        int temp[] = new int[length + length];
-        System.arraycopy(arr, 0, temp, 0, length);
-        length = length + length;
-        arr = temp;
-    }
-
-    public int size() {
-        return index+1;
-    }
-
-    public void display() {
-        for (int i =0; i<=index;i++) {
-            System.out.print(arr[i] + " ");
-        }
-    }
-
     public static void main(String[] args) {
         Stack stack = new Stack();
 //        System.out.println("Stack size is"+stack.size());
@@ -75,8 +41,42 @@ public class Stack {
         stack.push(30);
         stack.push(40);
         stack.display();
-        System.out.println("\n pop "+stack.pop());
+        System.out.println("\n pop " + stack.pop());
         stack.display();
+    }
+
+    public void push(int value) {
+        if (index == length - 1) {
+            resize();
+        }
+        arr[++index] = value;
+    }
+
+    public int pop() {
+        if (index == -1) {
+            throw new ArrayIndexOutOfBoundsException("Stack is empty");
+        }
+        int value = arr[index];
+        arr[index] = 0;
+        index--;
+        return value;
+    }
+
+    public void resize() {
+        int temp[] = new int[length + length];
+        System.arraycopy(arr, 0, temp, 0, length);
+        length = length + length;
+        arr = temp;
+    }
+
+    public int size() {
+        return index + 1;
+    }
+
+    public void display() {
+        for (int i = 0; i <= index; i++) {
+            System.out.print(arr[i] + " ");
+        }
     }
 
 }

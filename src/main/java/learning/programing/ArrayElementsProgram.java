@@ -19,7 +19,7 @@ public class ArrayElementsProgram {
 
         // How to remove element from array list
         int removeElement = 40;
-        List<Integer>  removedList = integers.stream().filter(e ->  e!=removeElement).collect(Collectors.toList());
+        List<Integer> removedList = integers.stream().filter(e -> e != removeElement).collect(Collectors.toList());
         System.out.println("Element removed from the list " + removedList);
 
     }

@@ -39,7 +39,7 @@ public class Car implements Cloneable {
     }
 
     @Override
-    public Car clone() throws CloneNotSupportedException{
+    public Car clone() throws CloneNotSupportedException {
         return new Car(this.id, this.name, this.color);
     }
 }

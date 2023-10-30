@@ -68,7 +68,7 @@ class ArrayListImp<E> {
     }
 
     public void display() {
-        for (int i =0; i<size; i++) {
+        for (int i = 0; i < size; i++) {
             System.out.print(store[i] + " ");
         }
         System.out.println("");

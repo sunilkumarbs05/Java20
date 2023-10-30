@@ -1,5 +1,13 @@
 package learning.java.java8.lambda;
 
+interface MathOperation {
+    int operation(int a, int b);
+}
+
+interface GreetingService {
+    void sayMessage(String message);
+}
+
 public class LambdaExample {
     public static void main(String[] args) {
         LambdaExample tester = new LambdaExample();
@@ -37,12 +45,4 @@ public class LambdaExample {
         greetService2.sayMessage("Suresh");
         System.out.println("\n-------------------------------------------------------\n");
     }
-}
-
-interface MathOperation {
-    int operation(int a, int b);
-}
-
-interface GreetingService {
-    void sayMessage(String message);
 }

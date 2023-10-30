@@ -14,7 +14,6 @@ final class C extends A {
 }
 
 
-
 public class SeleadClassTest {
     public static void main(String[] args) {
 

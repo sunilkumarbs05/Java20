@@ -25,7 +25,7 @@ public class FirstNonRepeatedCharacter {
 
     public static Character findFirstNonRepeatedCharacter_1(String value) {
         char charaaray[] = value.toCharArray();
-        for (char character: charaaray) {
+        for (char character : charaaray) {
             if (value.lastIndexOf(character) == value.indexOf(character))
                 return character;
         }

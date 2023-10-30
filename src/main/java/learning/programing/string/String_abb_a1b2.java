@@ -11,7 +11,7 @@ public class String_abb_a1b2 {
 
         Arrays.stream(value.split(""))
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-                .forEach((k, v) -> System.out.println(k+" "+v));
+                .forEach((k, v) -> System.out.println(k + " " + v));
 
     }
 }

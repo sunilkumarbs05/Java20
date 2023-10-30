@@ -8,7 +8,7 @@ public class Example2 {
 
         for (short i = 0; i < 100; i++) {
             shortSet.add(i);
-            shortSet.remove((short)(i - 1));
+            shortSet.remove((short) (i - 1));
         }
 
         System.out.println(shortSet.size());

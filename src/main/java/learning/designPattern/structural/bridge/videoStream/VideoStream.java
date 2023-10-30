@@ -10,5 +10,5 @@ public abstract class VideoStream {
         this.videoProcessor = videoProcessor;
     }
 
-    public abstract  void play(String videoFile);
+    public abstract void play(String videoFile);
 }

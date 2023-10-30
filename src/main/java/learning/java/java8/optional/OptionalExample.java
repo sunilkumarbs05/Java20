@@ -16,30 +16,31 @@ public class OptionalExample {
         Optional<String> value = Optional.of(str[5]);
 
         // If value is present, it returns an Optional otherwise returns an empty Optional
-        System.out.println("Filtered value: "+value.filter((s)->s.equals("Abc")));
-        System.out.println("Filtered value: "+value.filter((s)->s.equals("JAVA OPTIONAL CLASS EXAMPLE")));
+        System.out.println("Filtered value: " + value.filter((s) -> s.equals("Abc")));
+        System.out.println("Filtered value: " + value.filter((s) -> s.equals("JAVA OPTIONAL CLASS EXAMPLE")));
         System.out.println("\n-------------------------------------------------------\n");
 
 
         // It returns value of an Optional. if value is not present, it throws an NoSuchElementException
-        System.out.println("Getting value: "+value.get());
+        System.out.println("Getting value: " + value.get());
         System.out.println("\n-------------------------------------------------------\n");
 
         // It returns hashCode of the value
-        System.out.println("Getting hashCode: "+value.hashCode());
+        System.out.println("Getting hashCode: " + value.hashCode());
         System.out.println("\n-------------------------------------------------------\n");
 
         // It returns true if value is present, otherwise false
-        System.out.println("Is value present: "+value.isPresent());
+        System.out.println("Is value present: " + value.isPresent());
         System.out.println("\n-------------------------------------------------------\n");
 
         // It returns non-empty Optional if value is present, otherwise returns an empty Optional
-        System.out.println("Nullable Optional: "+Optional.ofNullable(str[5]));
-        System.out.println("\n-------------------------------------------------------\n");;
+        System.out.println("Nullable Optional: " + Optional.ofNullable(str[5]));
+        System.out.println("\n-------------------------------------------------------\n");
+        ;
 
         // It returns value if available, otherwise returns specified value,
-        System.out.println("orElse: "+value.orElse("Value is not present"));
-        System.out.println("orElse: "+empty.orElse("Value is not present"));
+        System.out.println("orElse: " + value.orElse("Value is not present"));
+        System.out.println("orElse: " + empty.orElse("Value is not present"));
         System.out.println("\n-------------------------------------------------------\n");
         value.ifPresent(System.out::println);   // printing value by using method reference
     }

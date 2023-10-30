@@ -4,13 +4,13 @@ import learning.designPattern.behavioral.command.Command;
 import learning.designPattern.behavioral.command.HandsDownCommand;
 import learning.designPattern.behavioral.command.RaiseOneHandCommand;
 
-public class RightClickEventListner implements EventListner{
+public class RightClickEventListner implements EventListner {
 
     @Override
     public void onEvent() {
-        Command command =null;
+        Command command = null;
         // if client A
-        command  = new HandsDownCommand();
+        command = new HandsDownCommand();
 //      else
         command = new RaiseOneHandCommand();
 

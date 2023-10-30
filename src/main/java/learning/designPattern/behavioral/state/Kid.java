@@ -1,7 +1,7 @@
 package learning.designPattern.behavioral.state;
 
 public class Kid {
-    private  int age;
+    private int age;
     private KidBehavior kidBehavior;
 
     public Kid(int age) {
@@ -13,12 +13,13 @@ public class Kid {
     }
 
     public void eat() {
-        kidBehavior.eat();;
+        kidBehavior.eat();
+        ;
     }
 
-    private void setAge(int age){
+    private void setAge(int age) {
         this.age = age;
-        switch (age){
+        switch (age) {
             case 1 -> kidBehavior = new FirstYearKid();
             case 2 -> kidBehavior = new SecondYear();
             case 3 -> kidBehavior = new ThirdYearKid();

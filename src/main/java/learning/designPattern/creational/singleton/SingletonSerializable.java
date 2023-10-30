@@ -8,11 +8,12 @@ public class SingletonSerializable implements Serializable {
     // public instance initialized when loading the class
     public static SingletonSerializable instance = new SingletonSerializable();
 
-    private SingletonSerializable()
-    {
+    private SingletonSerializable() {
         // private constructor
     }
 
     // implement readResolve method
-    protected Object readResolve() { return instance; }
+    protected Object readResolve() {
+        return instance;
+    }
 }
