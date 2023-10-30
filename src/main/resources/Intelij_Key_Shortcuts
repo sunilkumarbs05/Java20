@@ -36,6 +36,16 @@ Ctrl + Space (Twice)    => to display static method
 Alt + Enter             => to add a static import
 Ctrl + J                => to display postfix completion suggestion list
 Cmd + N                 => to display generate menu in class file
+Shift + Tab             => to move the selection one tab stop to the left
+Alt + Cmd + L           => to reformat current selection or current file
+Cmd + 1                 => to move the focus to project tool window
+Ctrl + Alt + O          => to optimize import statements
+Cmd + F9                => to build the application
+Cmd + Alt + Down        => to Navigate to next compilation error
+Cmd + Alt + up          => to Navigate to previous compilation error
+Alt + Enter             => to add language injection
+cmd + W                 => to close current fragment editor or current file
+
       --  Git --
 Cmd + D                 => to show diff of a file in commit changes Dialog
 Cmd + K                 => to commit project to VCS
@@ -80,6 +90,16 @@ Ctrl + Space (Twice)    => to display static method
 Alt + Enter             => to add a static import
 Ctrl + J                => to display postfix completion suggestion list
 Ctrl + insert           => to display generate menu in class file
+Shift + Tab             => to move the selection one tab stop to the left
+Alt + Ctrl + L           => to reformat current selection or current file
+Alt + 1                 => to move the focus to project tool window
+Ctrl + Alt + O          => to optimize import statements
+Ctrl + F9                => to build the application
+Ctrl + Alt + Down        => to Navigate to next compilation error
+Ctrl + Alt + up        => to Navigate to previous compilation error
+Alt + Enter             => to add language injection
+Ctrl + F4                 => to close current fragment editor or current file
+
 --  Git --
 Ctrl + D                => to show diff of a file in commit changes Dialog
 Ctrl + K                => to commit project to VCS
