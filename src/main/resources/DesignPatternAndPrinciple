@@ -55,7 +55,7 @@ Abstract Factory Pattern
 	define an interface or abstract class for creating families of related (or dependent) objects but without specifying their concrete sub-classes.
 
 Singleton design pattern
-	Singleton Pattern says that just"define a class that has only one and provides a global point of access to it".
+	Singleton Pattern says that just"define a class that has only one instance and provides a global point of access to it".
 
 Prototype Design Pattern
 	cloning of an existing object instead of creating new one and can also be customized as per the requirement
