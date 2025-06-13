@@ -19,18 +19,18 @@ Number
     4. Check Whether User Input Is Number Or Not
 
 String
-    1. Revers string in place
-    2. Write program  Input = aabbccccd   Output= a2b2c4d
-    3. Reverse words in a given String in Java
-    4. Write program to count the occurrence of each element in a string using JAVA 8. Eg  input —> abb  Output —> a=1 b=2
-    5. Find all duplicate elements from given string. Eg  input —> abbcc  Output —> bc
-    6. Find first non repeated element from a string. Eg input —> bbaccd Output -> a
-    7. Remove all the Lowercase Letters from a String in Java
-    8. Find all substring for given string
-    9. Check all unique characters for given string
-    10. Find length of String without using any inbuilt method in java?
-    11. How to check whether one string is a rotation of another in java?
-    12. How to check Palindrome String in Java
+    1. Revers string in place   : ReverseStringInPlace
+    2. Write program  Input = aabbccccd   Output= a2b2c4d  : String_abb_a1b2
+    3. Reverse words in a given String in Java : ReverseWordsInString
+    4. Write program to count the occurrence of each element in a string using JAVA 8. Eg  input —> abb  Output —> a=1 b=2  : CountOccurrenceEachCharacter
+    5. Find all duplicate elements from given string. Eg  input —> abbcc  Output —> bc : DuplicateCharacters
+    6. Find first non repeated element from a string. Eg input —> bbaccd Output -> a  : FirstNonRepeatedCharacter
+    7. Remove all the Lowercase Letters from a String in Java : RemoveLowerCaseString
+    8. Find all substring for given string : AllSubstring
+    9. Check all unique characters for given string  : AllUniqueCharacters
+    10. Find length of String without using any inbuilt method in java? : LengthOfString
+    11. How to check whether one string is a rotation of another in java?  : OneStringRotationAnother
+    12. How to check Palindrome String in Java : Palindrome
     13. Java Program to capitalize each word in String
 
 Array
