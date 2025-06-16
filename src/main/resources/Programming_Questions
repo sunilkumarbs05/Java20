@@ -31,7 +31,7 @@ String
     10. Find length of String without using any inbuilt method in java? : LengthOfString
     11. How to check whether one string is a rotation of another in java?  : OneStringRotationAnother
     12. How to check Palindrome String in Java : Palindrome
-    13. Java Program to capitalize each word in String
+    13. Java Program to capitalize each word in String : CapitalizeWords
 
 Array
     1. Find Duplicate elements in the List

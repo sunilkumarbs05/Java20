@@ -82,6 +82,9 @@ Facade Pattern
 Proxy Pattern
 	provides the control for accessing the original object
 
+-----------------------------------------------------------------------------------------------------------------------
+Behavioural
+
 Chain Of Responsibility Pattern
 
 	The chain of responsibility pattern creates a chain of receiver objects for a request
