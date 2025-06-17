@@ -34,14 +34,14 @@ String
     13. Java Program to capitalize each word in String : CapitalizeWords
 
 Array
-    1. Find Duplicate elements in the List
-    2. Find non duplicate element in the list
-    3. Find unique elements using stream API
-    4. Write Java program that checks if two arrays contain the same elements.
-    5. Write a program to find the index of first occurrence and last occurrence of an element in the array in a single iteration. Eg arr=1,2,3,4 find 2  Output: firstIndex =a and lastIndex=2
-    6. Find first repeating element in an array of integers.
-    7. How do you find the second largest number in an array in Java?
-    8. How do you get the sum of all elements in an integer array in Java?
+    1. Find Duplicate elements in the List : DuplicateElementsList
+    2. Find non duplicate element in the list : NonDuplicateElements
+    3. Find unique elements using stream API : UniqueElements
+    4. Write Java program that checks if two arrays contain the same elements. : TwoArraySameElement
+    5. Write a program to find the index of first occurrence and last occurrence of an element in the array in a single iteration. Eg arr=1,2,3,4 find 2  Output: firstIndex =2 and lastIndex=2 : IndexFirstAndLastOccurrence
+    6. Find first repeating element in an array of integers. : FirstRepeatingElement
+    7. How do you find the second largest number in an array in Java? : SecondLargestElementInList
+    8. How do you get the sum of all elements in an integer array in Java? : SumAllIntegerArray
     9. How do you shuffle an array in Java?
     10. Write java Program to Find Smallest and Largest Element in an Array.
     11. Sum all Natural number 1 to N using Java8.
