@@ -56,21 +56,21 @@ Array
 
 
 Map
-    1. Write a program to sort a map by value
-    2. Write a program to sort a map by value using Java 8
+    1. Write a program to sort a map by value : SortMapValue
+    2. Write a program to sort a map by value using Java 8 : SortMapValueUsingJava8
 
 Algorithm
     1. Fibonacci series   -> 0 => NA ;  1 => 0 ;  2 => 0, 1 ; 3=> 0, 1, 1 ;  4=> 0, 1, 1, 2
-        1. Fibonacci series for a given number
-        2. Fibonacci series upto given number
-        3. Fibonacci series using recursion
+        1. Fibonacci series for a given number : FibonacciSeriesGivenNumber
+        2. Fibonacci series upto given number : FibonacciSeriesUptoGivenNumber
+        3. Fibonacci series using recursion : FibonacciSeriesUsingRecursion
     2. Prime
-        1. Given number prime or not
-        2. Print prime number upto given number
+        1. Given number prime or not : CheckPrimeOrNot
+        2. Print prime number upto given number : PrimeNumbersUptoGivenNumber
     3. Factorial    ———>  0! = 1;  4! = 4*3*2*1 = 24
-        1. Factorial using loop
-        2. Factorial using recursion
+        1. Factorial using loop : FactorialMain
+        2. Factorial using recursion : FactorialUsingRecursion
 
 Questions:
-    1. Remove all duplicates Employee from Employee list having same name( Using stream function)
-    2. Check for Balanced Brackets in an expression
+    1. Remove all duplicates Employee from Employee list having same name( Using stream function) : RemoveEmployeesSameName
+    2. Check for Balanced Brackets in an expression : CheckBalancedParenthesesExpression

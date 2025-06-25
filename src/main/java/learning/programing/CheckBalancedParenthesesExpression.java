@@ -18,8 +18,7 @@ public class CheckBalancedParenthesesExpression {
             char current = expr.charAt(i);
             if (current == '{' || current == '(' || current == '[') {
                 stack.push(current);
-            }
-            if (current == '}' || current == ')' || current == ']') {
+            } else if (current == '}' || current == ')' || current == ']') {
                 if (stack.isEmpty()) return "Not Balanced";
                 char last = stack.peek();
                 if (current == '}' && last == '{' || current == ')' && last == '(' || current == ']' && last == '[')
