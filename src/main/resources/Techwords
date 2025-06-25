@@ -12,4 +12,6 @@
 
     AWS
         - EC2 --> Elastic Compute could
-        -
+        - AMI --> Amazon Machine Image
+        - ELB --> Elastic Load Balancing
+

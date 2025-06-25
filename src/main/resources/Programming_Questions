@@ -42,17 +42,17 @@ Array
     6. Find first repeating element in an array of integers. : FirstRepeatingElement
     7. How do you find the second largest number in an array in Java? : SecondLargestElementInList
     8. How do you get the sum of all elements in an integer array in Java? : SumAllIntegerArray
-    9. How do you shuffle an array in Java?
-    10. Write java Program to Find Smallest and Largest Element in an Array.
-    11. Sum all Natural number 1 to N using Java8.
-    12. Java program to find missing number in an array
-    13. Find the number occurring odd number of times in an array
-    14. Separate odd and even numbers in an array
-    15. Separate 0’s and 1’s numbers in an array
-    16. Find all pairs of elements from an array whose sum is equal to given number
-    17. Given a sorted array and a number x, find the pair in array whose sum is closest to x
-    18. Write a java program to find common elements between two arrays?
-    19. Write a java program to find intersection of two arrays?
+    9. How do you shuffle an array in Java? : ShuffleArrayElements
+    10. Write java Program to Find Smallest and Largest Element in an Array.  : SmallestLargestInList
+    11. Sum all Natural number 1 to N using Java8. : SumNaturalNumber1ToN
+    12. Java program to find missing number in an array  : MissingNumberInList
+    13. Find the number occurring odd number of times in an array : OddNumberOfTimesNumber
+    14. Separate odd and even numbers in an array : SeparateOddEven
+    15. Separate 0’s and 1’s numbers in an array : Separate01
+    16. Find all pairs of elements from an array whose sum is equal to given number : FindPairSumEqualToX
+    17. Given a sorted array and a number x, find the pair in array whose sum is closest to x : FindPairSumNearX
+    18. Write a java program to find common elements between two arrays? : FindCommonElementsOfArrays
+    19. Write a java program to find intersection of two arrays? : TwoArraySameElement
 
 
 Map
